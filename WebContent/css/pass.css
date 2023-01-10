@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(45deg, #131086, #b621f3);
+    padding: 35px;
+  }
+  
+  .container {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    border-radius: 100px;
+    overflow: hidden
+  }
+  
+  .password-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .password-header {
+    margin-bottom: 50px;
+  }
+  
+  .password-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .password-header p {
+    opacity: 0.7;
+  }
+  
+  .password-form {
+    width: 450px;
+  }
+  
+  .password-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .form-item label:not(.checkboxLabel) {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+  }
+  
+  input[type=password],
+  input[type=password] {
+    border: 1px solid black;
+    outline: none;
+    height: 55px;
+    padding: 0 2rem;
+    border-radius: 40px;
+    width: 100%;
+    transition: background 0.5s;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 2px;
+    height: 55px;
+    cursor: pointer;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #131086, #b621f3);
+  }

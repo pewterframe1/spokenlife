@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+
+   
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+<div class="login-left">
+    <div class="login-header">
+        <h1>Benvenuto viaggiatore</h1>
+        <p>Per favore accedi</p>
+    </div>
+    <form class="accedi-form" action="login" method="post">
+        <div class="login-form-content">
+            <div class="form-item">
+                <label for="username">Inserisci username</label>
+                <input id="username" type="text" name="username" >
+            </div>
+            <div class="form-item">
+                <label for="password">Inserisci password</label>
+                <input id="password" type="password" name="password">
+            </div>
+            <div class="form-item">
+                <div class="checkbox">
+                   <input type="checkbox" id="ricordatiDiMeCheckbox">Ricordati di me
+                   <label for="ricordatiDiMeCheckbox" id="checkboxLabel"></label>
+                </div>
+                
+            </div>
+            <button type="submit">accedi</button>
+            
+            <script type="text/javascript">
+                const button= document.querySelectorAll('button');
+                button.forEach(btn=> {
+                    btn.addEventListener('click', function(e) {
+                        let x = e.clientX - e.target.offsetLeft;
+                        let y = e.clientY - e.target.offsetTop;
+
+                        let ripples = document.createElement('span');
+                        ripples.style.left = x + 'px';
+                        ripples.style.top = y + 'px';
+                        this.appendChild(ripples);
+
+                        setTimeout(() => {
+                            ripples.remove()
+                        },1000);
+
+                    })
+                })
+            </script>
+            <a href="registrazione.html">Non hai un account? Iscriviti!</a>
+            <div id="pass">
+                <a href="password.html"> Password dimenticata?</a>
+            </div>
+           
+        <div class="login-form-footer">
+            <a href="https://it-it.facebook.com/">
+                <img width="30" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt=""> Facebook login
+            </a>
+            <a href="https://www.google.com/intl/it/gmail/about/">
+                <img width="30" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt=""> Google login
+        </div>
+        <div class="im">
+            <img src="../immagini/googleplayappstore.png" alt="apple" style="width: 500px;height:60px;">
+        </div><br>
+        
+        </form>
+</div>
+</div>
+</body>
+</html>
