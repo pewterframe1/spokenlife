@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This is social network html5 template available in themeforest......" />
+		<meta name="keywords" content="Social Network, Social Media, Make Friends, Newsfeed, Profile Page" />
+		<meta name="robots" content="index, follow" />
+		<title>Contatti</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+		<link rel="stylesheet" href="cssapp/bootstrap.min.css" />
+		<link rel="stylesheet" href="cssapp/style.css" />
+		<link rel="stylesheet" href="cssapp/ionicons.min.css" />
+    <link rel="stylesheet" href="cssapp/font-awesome.min.css" />
+    
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+	</head>
+  <body>
+
+        <!-- Header
+    ================================================= -->
+		<header id="header">
+      <nav class="navbar navbar-default navbar-fixed-top menu">
+        <div class="container"  >
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header" style="padding-left: 4%">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.jsp"><img src="images/definitivo3333.png" alt="logo" /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-right: 4%">
+            <ul class="nav navbar-nav navbar-right main-menu" style="padding-top:3px!important">
+            <li class="dropdown">
+                <a href="home.jsp" class="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+              </li>
+              <li class="dropdown">
+                <a href="timeline.jsp?username=<%=user.getUsername() %>" class="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profilo</a>
+              </li>
+              <li class="dropdown">
+                <a href="chat.jsp" class="Home">Chatroom <span></span></a>
+              </li>
+              <li class="dropdown"><a href="contact.html">Contatti</a></li>
+            </ul>
+            <form class="navbar-form navbar-right hidden-sm" action="logout" method="post">
+            	<div class="form-group">
+                	<button type="submit" class="btn-primary" name="usernamelogout" value="<%=user.getUsername()%>">Esci</button>
+              </div>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
+    <!--Header End-->
+
+    <div class="google">
+      <div id="map" class="map contact-map"></div>
+    </div>
+    <div id="page-contents">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-10 col-md-offset-1">
+            <div class="contact-us">
+            	<div class="row">
+            		<div class="col-md-8 col-sm-7">
+                  <h4 class="grey">Lascia un messaggio</h4>
+                  <form class="contact-form">
+                    <div class="form-group">
+                      <i class="icon ion-person"></i>
+                      <input id="contact-name" type="text" name="name" class="form-control" placeholder="Scrivi il tuo nome *" required="required" data-error="Name is required.">
+                    </div>
+                    <div class="form-group">
+                      <i class="icon ion-email"></i>
+                      <input id="contact-email" type="text" name="email" class="form-control" placeholder="Scrivi la tua email *" required="required" data-error="Email is required.">
+                    </div>
+                    <div class="form-group">
+                      <i class="icon ion-android-call"></i>
+                      <input id="contact-phone" type="text" name="phone" class="form-control" placeholder="Scrivi il tuo numero di telefono *" required="required" data-error="Phone is required.">
+                    </div>
+                    <div class="form-group">
+                      <textarea id="form-message" name="message" class="form-control" placeholder="Oggetto *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    </div>
+                  </form>
+                  <button class="btn-primary">Invia messaggio</button>
+                </div>
+            	</div>
+            </div>
+          </div>
+    		</div>
+    	</div>
+    </div>
+
+    <!-- Footer
+    ================================================= -->
+    <footer id="footer">
+      <div class="container">
+      	<div class="row">
+          <div class="footer-wrapper">
+            <div class="col-md-3 col-sm-3">
+              <h5>Contattaci</h5>
+              <ul class="contact">
+                <li><a href="tel:+393517489411"><i class="icon ion-ios-telephone-outline" style="color: blueviolet;"></i>+39 351 748 9411</li></a>
+                <li><a href="mailto:spokenlife70@gmail.com"><i class="icon ion-ios-email-outline" style="color: blueviolet;"></i>spokenlife70@gmail.com</li></a>
+                <li><a href="map:1200 19th Street,NW
+                  Suite 1110 Washington, DC 20036"><i class="icon ion-ios-location-outline" style="color: blueviolet;"></i>1200 19th Street,<br>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NW
+                  Suite 1110
+                  <br>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Washington, DC 20036</li></a>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <h5>Ecco dove puoi trovarci</h5>
+              <ul class="list-inline social-icons">
+              	<li><a href="#"><i class="fa fa-spotify" style="color: rgb(56, 218, 50);">&nbsp;SpokenLifeMusic</i></a></li><br>
+              	<li><a href="#"><i class="fa fa-instagram" style="color: rgb(220, 20, 113);">&nbsp;spokeenlife_</i></a></li><br>
+              	<li><a href="#"><i class="fa fa-linkedin" style="color: darkcyan;">&nbsp;SpokenLife</i></a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <h5>About</h5>
+              <ul class="footer-links">
+                <li><a href="../sito/html/about.html">About us</a></li>
+                <li><a href="../applicazione/contact.html">Contact us</a></li>
+                <li><a href="../sito/html/index.html">Help</a></li>
+              </ul>
+            </div>
+          </div>
+      	</div>
+      </div>
+      <div class="copyright">
+        <p>SpokenLife © 2023. All rights reserved</p>
+      </div>
+		</footer>
+    
+    <!--preloader-->
+    <div id="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
+    
+    <!-- Scripts
+    ================================================= -->
+   
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
